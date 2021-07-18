@@ -1,5 +1,9 @@
 # Data-Structures-and-Algorithms-
 Data Structures and Algorithms 
+### 用setTimeout实现setInterval（）
+setInterval(fun,time)：间隔time就执行fun函数一次，重复性的。
+setTimeout(fun,time):当过了time时间后，执行fun函数一次，非重复性的，只执行一次。
+
 
 ## 150. Evaluate Reverse Polish Notation
 

@@ -1,3 +1,7 @@
+
+
+### get于post的区别
+
 # Data-Structures-and-Algorithms-
 Data Structures and Algorithms 
 ### 用setTimeout实现setInterval（）

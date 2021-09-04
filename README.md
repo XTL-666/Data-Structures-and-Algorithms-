@@ -1,6 +1,7 @@
+
 分割子数组异或和为零的最大值
 
-```
+```java
 public static int mostEOR(int[] arr){
 	int ans = 0;
 	int[] dp = new int[arr.length];
@@ -19,6 +20,9 @@ public static int mostEOR(int[] arr){
 	}
 	return ans;
 }
+```
+
+
 ```
 
 

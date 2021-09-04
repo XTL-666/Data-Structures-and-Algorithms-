@@ -14,7 +14,7 @@ public static int mostEOR(int[] arr){
 			int pre = map.get(xor);
  			dp[i] = pre == -1 ? 1 : dp[pre] + 1;
 		}
-		map.put(0,-1);
+		map.put(xor,i);
 		if(i > 0) dp[i] = Math.max(dp[i - 1],dp[i]);
 		ans = max(ans,dp[i]);
 	}

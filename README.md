@@ -20,12 +20,6 @@ public static int mostEOR(int[] arr){
 	}
 	return ans;
 }
-```
-
-
-```
-
-
 
 ### get于post的区别
 

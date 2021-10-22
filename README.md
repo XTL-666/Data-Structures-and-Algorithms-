@@ -1,3 +1,60 @@
+## RSA加密原理，解密原理
+
+![img](https://img-blog.csdnimg.cn/20191008011532411.png)
+
+![img](https://img-blog.csdnimg.cn/20191008011729411.png)
+
+简单来说，密文是明文E次之后模上N
+
+公钥中包含的E，N的信息组合
+
+![img](https://img-blog.csdnimg.cn/201910080119101.png)
+
+![img](https://img-blog.csdnimg.cn/2019100801193458.png)
+
+同样的我们需要对密文进行D此幂之后模上N
+
+所以私钥就是D，N的组合
+
+密钥对（E，D，N）
+
+求N：
+
+N是两个互质数的乘积
+
+N = p * q
+
+L（过程数）
+
+求L：
+
+L 是 p－1 和 q－1的最小公倍数
+
+L = lcm（p－1，q－1）
+
+求E：
+
+E必须满足两个条件：E是一个比1大比L小的数，E和L的最大公约数为1；
+
+1 < E < L
+
+gcd（E，L）=1
+
+求D：
+
+数D是由数E计算出来的，数D必须保证足够大
+
+1 < D < L
+
+E＊D mod L ＝ 1
+
+| 求N  | N＝ p ＊ q ；p，q为质数                                 |
+| ---- | ------------------------------------------------------- |
+| 求L  | L＝lcm（p－1，q－1） ；L为p－1、q－1的最小公倍数        |
+| 求E  | 1 < E < L，gcd（E，L）=1；E，L最大公约数为1（E和L互质） |
+| 求D  | 1 < D < L，E＊D mod L ＝ 1                              |
+
+
 ### 事务的概念和特性？
 
 概念：事务（Transaction）是一个操作序列，不可分割的工作单位，以BEGIN TRANSACTION开始，以ROLLBACK/COMMIT结束

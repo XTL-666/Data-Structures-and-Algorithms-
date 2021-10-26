@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+    </properties>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+<!--    <typeAliases>-->
+<!--        <typeAlias type="demo01.liang.pojo.BlogMapper" alias="blog"/>-->
+<!--    </typeAliases>-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="666"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper class = "demo01.liang.dao.UserMapper"/>
+    </mappers>
+</configuration>

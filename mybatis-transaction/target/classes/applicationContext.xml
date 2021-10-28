@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/beans ">
+
+    <import resource="spring-dao.xml"/>
+
+    <bean id="userMapper" class="demo01.liang.mapper.UserMapperImpl">
+        <property name="sqlSessionFactory" ref = "sqlSessionFactory"/>
+    </bean>
+<!--    <bean id="userMapper2" class="demo01.liang.mapper.UserMapperImpl2">-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+
+
+</beans>
